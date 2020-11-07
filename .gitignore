@@ -1,0 +1,22 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+# eclipse files #
+######################
+.classpath
+.project
+.settings/
+
+# IDEA files #
+######################
+.idea
+atlassian-ide-plugin.xml
+**/*.iml
+
+# build files #
+######################
+build.properties
+tmp
+target
+work
