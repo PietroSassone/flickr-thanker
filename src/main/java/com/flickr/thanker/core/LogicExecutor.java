@@ -56,11 +56,6 @@ public class LogicExecutor {
         LOGGER.info("Adding new comment.");
         photoPage.addNewComment();
 
-        try {
-            Thread.sleep(40000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
 //            photoPage.clickOnAddCommentButton();
         LOGGER.info("Successfully added new comment.");
     }
@@ -83,7 +78,7 @@ public class LogicExecutor {
                 LOGGER.info("Author was deleted, skipping it.");
             }
         });
-        LOGGER.info("Number of comments after filtering out multiles from the same author: {}", commentAuthorsWithReplyButtonsMap.size());
+        LOGGER.info("Number of comments after filtering out multiples from the same author: {}", commentAuthorsWithReplyButtonsMap.size());
         return commentAuthorsWithReplyButtonsMap;
     }
 
